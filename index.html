@@ -12,7 +12,7 @@
         </a>
         <div>
           <form action="#" method="POST">
-            <input type="search" placeholder="Поиск:" id="id-search"> 
+            <input type="search" placeholder="Поиск:" id="id-search" name="search-field"> 
             <label for="id-search">Поиск</label>
           </form>
           <div>
@@ -368,15 +368,15 @@
       <form method="POST" action="#">
         <label>
           Ваше имя:
-          <input type="text" placeholder="Имя Фамилия">
+          <input type="text" placeholder="Имя Фамилия" name="name-field">
         </label>
         <label>
           Ваш e-mail:
-          <input type="email" placeholder="email@example.com">
+          <input type="email" placeholder="email@example.com" name="email-field">
         </label>
         <label>
           Текст письма:
-          <textarea placeholder="В свободной форме" rows="10" cols="60"></textarea>
+          <textarea placeholder="В свободной форме" rows="10" cols="60" name="text-field"></textarea>
         </label>
         <button type="submit">Отправить</button>
       </form>

@@ -14,7 +14,7 @@
       </a>
       <div>
           <form action="#" method="POST">
-            <input type="search" placeholder="Поиск:" id="id-search"> 
+            <input type="search" placeholder="Поиск:" id="id-search" name="search-field"> 
             <label for="id-search">Поиск</label>
           </form>
           <div>
@@ -99,11 +99,11 @@
           <p>
             <label>
               От
-              <input type="text" value="0">
+              <input type="text" name="min-price" value="0">
             </label>
             <label>
               До
-              <input type="text" value="30000">
+              <input type="text" name="max-price" value="30000">
             </label>
           </p>
         </fieldset>
@@ -112,27 +112,27 @@
           <ul>
             <li>
               <label>
-                <input type="checkbox" name="manufacturer" checked> Bosch
+                <input type="checkbox" name="manufacturer" value="bosch" checked> Bosch
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturer"> Интерскол
+                <input type="checkbox" name="manufacturer" value="interskol"> Интерскол
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturer" checked> Makita
+                <input type="checkbox" name="manufacturer" value="makita" checked> Makita
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturer"> DeWalt
+                <input type="checkbox" name="manufacturer" value="dewalt"> DeWalt
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturer"> Hitachi
+                <input type="checkbox" name="manufacturer" value="hitachi"> Hitachi
               </label>
             </li>
           </ul>
