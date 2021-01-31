@@ -66,6 +66,7 @@
     --dark-mirage: #1D2739;
     --wild-sand: #F4F4F4;
     --brick-red: #CA2C37;
+    --apple: #518534;
     --catskill-white: #F3F7F9;
     --special-yellow: #FFBF47;
     --special-blue: #3BBCE3;
@@ -124,6 +125,11 @@
 
 .search-input {
     background-color: inherit;
+}
+
+.search-input:focus {
+    color: var(--basic-black);
+    background-color: rgb(var(--white));
 }
 
 .search-input::placeholder {
@@ -279,6 +285,10 @@
     background-color: rgba(var(--silver-rgb), 0.3);
 }
 
+.promo-slides-item {
+    background-color: var(--basic-black);
+}
+
 .promo-slides-title {
     font-weight: bold;
     font-size: 36px;
@@ -336,6 +346,8 @@
     line-height: 18px;
     text-transform: uppercase;
     color: rgb(var(--white));
+    text-transform: uppercase;
+    background-color: var(--basic-red);
 }
 
 .goods-btn-buy {
@@ -346,13 +358,32 @@
     background-color: var(--basic-green);
 }
 
+.goods-btn-buy:hover,
+.goods-btn-buy:focus {
+    background-color: var(--success);
+}
+
+.goods-btn-buy:active {
+    background-color: var(--apple);
+}
+
 .goods-btn-bookmark {
     background-color: rgb(var(--white));
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-
+    border: 3px solid var(--basic-green);
     color: var(--basic-blue);
+}
+
+.goods-btn-bookmark:hover,
+.goods-btn-bookmark:focus {
+    border: 3px solid var(--basic-blue);
+    background-color: rgb(var(--white));
+}
+
+.goods-btn-bookmark:active {
+    opacity: 0.5;
 }
 
 /* Main - Brands*/
@@ -389,11 +420,21 @@
     background-color: var(--basic-blue);
 }
 
+.services-control-button:hover,
+.services-control-button:focus {
+    background-color: var(--bluewood);
+}
+
 .active {
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-blue);
+    background-color: rgb(var(--white));
+}
+
+.active:hover,
+.active:focus {
     background-color: rgb(var(--white));
 }
 
@@ -489,6 +530,19 @@
     text-decoration: none;
 }
 
+.footer-navigation-link:hover,
+.footer-offers-link:hover,
+.footer-navigation-link:focus,
+.footer-offers-link:focus {
+    text-decoration: underline;
+}
+
+.footer-navigation-link:active,
+.footer-offers-link:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
 .footer-contact {
     color: var(--catskill-white);
 }
@@ -518,6 +572,19 @@
 .footer-developer-link {
     color: var(--special-yellowlight);
     text-decoration: none;
+}
+
+.footer-email-link:hover,
+.footer-developer-link:hover,
+.footer-email-link:focus,
+.footer-developer-link:focus {
+    text-decoration: underline;
+}
+
+.footer-email-link:active,
+.footer-developer-link:active {
+    text-decoration: none;
+    color: var(--basic-red);
 }
 
 /* Modal Feedback*/
