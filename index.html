@@ -20,7 +20,7 @@
       <div class="header-inner">
         <form class="form-search" action="#" method="POST">
           <input class="search-input" type="search" placeholder="Поиск:" id="id-search" name="search-field">
-          <label class="search-label" for="id-search">Поиск</label>
+          <label class="visually-hidden" for="id-search">Поиск</label>
         </form>
         <div class="header-inner-right">
           <a class="header-bookmark" href="#">Закладки: 0</a>
@@ -74,27 +74,27 @@
   </header>
   <main class="main">
     <section class="promo">
-      <h2 class="promo-title">Промо-раздел</h2>
+      <h2 class="visually-hidden">Промо-раздел</h2>
       <ul class="promo-goods-list">
-        <li class="promo-goods-item">
+        <li class="promo-goods-item promo-materials">
           <p class="promo-goods-text">Материалы</p>
           <a class="promo-goods-link" href="#">На любой вкус</a>
         </li>
-        <li class="promo-goods-item">
+        <li class="promo-goods-item promo-instrument">
           <p class="promo-goods-text">Инструмент</p>
           <a class="promo-goods-link" href="#">На все случаи</a>
         </li>
-        <li class="promo-goods-item">
+        <li class="promo-goods-item promo-technics">
           <p class="promo-goods-text">Техника</p>
           <a class="promo-goods-link" href="#">Для стройки</a>
         </li>
       </ul>
       <ul class="promo-services-list">
-        <li class="promo-services-item">
+        <li class="promo-services-item promo-sales">
           <p class="promo-services-text">Скидки 50%</p>
           <a class="promo-services-link" href="#">На 350 товаров</a>
         </li>
-        <li class="promo-services-item">
+        <li class="promo-services-item promo-delivery">
           <p class="promo-services-text">Доставка</p>
           <a class="promo-services-link" href="#">Бесплатно</a>
         </li>
@@ -105,13 +105,13 @@
             <p class="promo-slides-title">Дрели</p>
             <p class="promo-slides-slogan">Соседям на радость!</p>
             <img class="promo-slides-image" src="img/slider-drill.jpg" width="620" height="266" alt="Строитель, работающий дрелью">
-            <a class="promo-slides-button" href="catalog.html">Открыть каталог</a>
+            <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="promo-slides-item">
             <p class="promo-slides-title">Перфораторы</p>
             <p class="promo-slides-slogan">Настоящие мужские игрушки</p>
             <img class="promo-slides-image" src="img/slider-perforator.jpg" width="620" height="266" alt="Строитель, работающий перфоратором">
-            <a class="promo-slides-button" href="catalog.html">Открыть каталог</a>
+            <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
         <div class="promo-direction-control">
@@ -125,19 +125,21 @@
       </div>
     </section>
     <section class="goods">
-      <h2 class="goods-title">Популярные товары:</h2>
-      <a class="goods-link" href="#">Все популярные товары</a>
+      <div class="goods-wrapper">
+        <h2 class="title goods-title">Популярные товары:</h2>
+        <a class="button goods-link" href="#">Все популярные товары</a>
+      </div>
       <ul class="goods-list">
         <li class="goods-item">
           <div class="goods-info">
             <img class="goods-info-image" src="img/perforator-bosch-bfg-9000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 9000">
             <p class="goods-info-title">Перфоратор BOSCH BFG 9000</p>
             <p class="goods-info-price">32500 p.</p>
-            <p class="goods-info-sale">25500 р.</p>
+            <p class="button goods-info-sale">25500 р.</p>
           </div>
           <div class="goods-interaction">
-            <a class="goods-btn-buy" href="#">Купить</a>
-            <a class="goods-btn-bookmark" href="#">В закладки</a>
+            <a class="button goods-btn-buy" href="#">Купить</a>
+            <a class="button goods-btn-bookmark" href="#">В закладки</a>
           </div>
         </li>
         <li class="goods-item">
@@ -145,11 +147,11 @@
             <img class="goods-info-image" src="img/perforator-bosch-bfg-3000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
             <p class="goods-info-title">Перфоратор BOSCH BFG 3000</p>
             <p class="goods-info-price">22500 p.</p>
-            <p class="goods-info-sale">15500 р.</p>
+            <p class="button goods-info-sale">15500 р.</p>
           </div>
           <div class="goods-interaction">
-            <a class="goods-btn-buy" href="#">Купить</a>
-            <a class="goods-btn-bookmark" href="#">В закладки</a>
+            <a class="button goods-btn-buy" href="#">Купить</a>
+            <a class="button goods-btn-bookmark" href="#">В закладки</a>
           </div>
         </li>
         <li class="goods-item">
@@ -157,11 +159,11 @@
             <img class="goods-info-image" src="img/perforator-bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
             <p class="goods-info-title">Перфоратор BOSCH BFG 6000</p>
             <p class="goods-info-price">30500 p.</p>
-            <p class="goods-info-sale">25500 р.</p>
+            <p class="button goods-info-sale">25500 р.</p>
           </div>
           <div class="goods-interaction">
-            <a class="goods-btn-buy" href="#">Купить</a>
-            <a class="goods-btn-bookmark" href="#">В закладки</a>
+            <a class="button goods-btn-buy" href="#">Купить</a>
+            <a class="button goods-btn-bookmark" href="#">В закладки</a>
           </div>
         </li>
         <li class="goods-item">
@@ -169,18 +171,20 @@
             <img class="goods-info-image" src="img/perforator-bosch-bfg-3000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
             <p class="goods-info-title">Перфоратор BOSCH BFG 2000</p>
             <p class="goods-info-price">22500 p.</p>
-            <p class="goods-info-sale">12500 р.</p>
+            <p class="button goods-info-sale">12500 р.</p>
           </div>
           <div class="goods-interaction">
-            <a class="goods-btn-buy" href="#">Купить</a>
-            <a class="goods-btn-bookmark" href="#">В закладки</a>
+            <a class="button goods-btn-buy" href="#">Купить</a>
+            <a class="button goods-btn-bookmark" href="#">В закладки</a>
           </div>
         </li>
       </ul>
     </section>
     <section class="brands">
-      <h2 class="brands-title">Популярные производители:</h2>
-      <a class="brands-link" href="#">Все производители</a>
+      <div class="brands-wrapper">
+        <h2 class="title brands-title">Популярные производители:</h2>
+        <a class="button brands-link" href="#">Все производители</a>
+      </div>
       <ul class="brands-list">
         <li class="brands-item">
           <a class="brands-item-link" href="#">
@@ -225,7 +229,7 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="services-title">Сервисы</h2>
+      <h2 class="title services-title">Сервисы</h2>
       <p class="services-slogan">
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -233,7 +237,7 @@
       <div class="services-slider">
         <ul class="services-control">
           <li class="services-control-item">
-            <button class="services-control-button" type="button">Доставка</button>
+            <button class="services-control-button active" type="button">Доставка</button>
           </li>
           <li class="services-control-item">
             <button class="services-control-button" type="button">Гарантия</button>
@@ -243,7 +247,7 @@
           </li>
         </ul>
         <ul class="services-slides-list">
-          <li class="services-slides-item">
+          <li class="services-slides-delivery">
             <h3 class="services-slides-title">Доставка</h3>
             <p class="services-slides-text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
@@ -251,7 +255,7 @@
               поднимая его на ваш этаж!
             </p>
           </li>
-          <li class="services-slides-item">
+          <li class="services-slides-guarantee">
             <h3 class="services-slides-title">Гарантия</h3>
             <p class="services-slides-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
               возгоранием,
@@ -259,18 +263,18 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li class="services-slides-item">
+          <li class="services-slides-credit">
             <h3 class="services-slides-title">Кредит</h3>
             <p class="services-slides-text">Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a class="services-slides-button" href="#">Отправить заявку</a>
+            <a class="button services-slides-button" href="#">Отправить заявку</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="about">
-      <h2 class="about-title">Компания «Техномарт»</h2>
+      <h2 class="title about-title">Компания «Техномарт»</h2>
       <p class="about-text-top">
         Настоящий мужской шоппинг начинается здесь!
         Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на
@@ -285,17 +289,17 @@
         <li class="about-item">Автотрейдинг</li>
         <li class="about-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="about-link" href="#">Подробнее о компании</a>
+      <a class="button about-link" href="#">Подробнее о компании</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts-title">Контакты</h2>
+      <h2 class="title contacts-title">Контакты</h2>
       <p class="contacts-text">
         Вы можете забрать товар сами, заехав в наш офис:
       </p>
       <a class="contacts-map" href="#">
         <img src="img/map.png" width="300" height="158" alt="Адрес офиса: Большая Конюшенная улица, дом 19">
       </a>
-      <a class="contacts-link" href="#">
+      <a class="button contacts-link" href="#">
         Заблудились? Напишите нам
       </a>
     </section>
@@ -370,7 +374,7 @@
   </footer>
 
   <section class="modal modal-feedback">
-    <h2 class="feedback-title">Форма обратной связи</h2>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="feedback-form" method="POST" action="#">
       <label class="feedback-name">
         Ваше имя:
@@ -384,7 +388,9 @@
         Текст письма:
         <textarea class="feedback-text-input" placeholder="В свободной форме" rows="10" cols="60" name="text-field"></textarea>
       </label>
-      <button class="feedback-button" type="submit">Отправить</button>
+      <div class="modal-feedback-bottom">
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </div>
     </form>
     <button class="modal-close" type="button">Закрыть окно</button>
   </section>
