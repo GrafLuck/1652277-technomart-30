@@ -56,19 +56,24 @@
     --basic-greylight-rgb: 197, 197, 197;
     --basic-background: #F1F5F7;
 
+    --basic-black-rgb: 0, 0, 0;
 
     --bluewood: #293449;
+    --pickled-bluewood: #32425C;
     --white: 255, 255, 255;
     --silver: #A9A9A9;
     --silver-rgb: 169, 169, 169;
     --merino: #F9F5F0;
+    --mercury: #E5E5E5;
     --mirage: #161D29;
     --dark-mirage: #1D2739;
     --fiord: #405069;
     --wild-sand: #F4F4F4;
     --brick-red: #CA2C37;
     --apple: #518534;
+    --ecru-white: #F7F3EC;
     --catskill-white: #F3F7F9;
+    --aqua: #F2F6F8;
     --special-yellow: #FFBF47;
     --special-blue: #3BBCE3;
     --special-lilac: #DC91D8;
@@ -262,6 +267,14 @@
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+}
+
+.order-link,
+.personal-page-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--pickled-bluewood);
+    text-decoration: none;
 }
 
 /* Main - Promo*/
@@ -670,3 +683,178 @@
     background-color: var(--wild-sand);
 }
 
+/****************************** CATALOG.HTML ***********************************/
+
+.catalog-title { 
+    color: var(--pickled-bluewood); 
+    background: var(--aqua);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-link {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+/* Filters and Sorting */
+
+.filters-title,
+.sort-title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.filters-title,
+.sort {
+    background-color: var(--ecru-white);
+}
+
+.filter-title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.filter-price,
+.filter-manufacturers,
+.filter-power {
+    border: none;
+}
+
+.filter-min-price,
+.filter-max-price {
+    background: #F7F3EC;
+    text-align: center;
+    border: none;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.filter-manufacturers-list,
+.filter-power-list,
+.sort-type-list,
+.sort-order-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.filter-label {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.catalog-button {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: rgb(var(--white));
+    color: var(--basic-black);
+    border: 1px solid var(--mercury);
+    text-decoration: none;
+    text-align: center;
+}
+
+.sort-type-link {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(var(--basic-black-rgb), 0.3);  
+
+    display: inline-block;
+    border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort-type-current {
+    color: var(--basic-red);
+    opacity: 1;
+    border-bottom: none;
+}
+
+/* Pagination */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-button {
+    border-radius: 2px;
+}
+
+.pagination-button-current {
+    border-radius: 2px;
+    background-color: var(--basic-red);
+    color: rgb(var(--white));
+    border-color: var(--basic-red);
+}
+
+/* About good */
+
+.about-good {
+    background-color: var(--basic-background);
+}
+
+.about-good-title {
+    color: var(--basic-black);
+}
+
+.about-good-text {
+    font-family: "PT Sans", "Arial", sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+/* Modal Add to the Cart */
+
+.modal-add-cart-text {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.button-continue {
+    color: var(--basic-black);
+    background-color: rgb(var(--white));
+}
+
+.modal-add-cart-inner {
+    background-color: var(--basic-background);
+}

@@ -84,7 +84,7 @@
     <h1 class="title catalog-title">Перфораторы</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link" href="index.html">Главная</a>
+        <a class="visually-hidden" href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
@@ -93,19 +93,19 @@
         <a class="breadcrumbs-link" href="#">Инструмент</a>
       </li>
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link breadcrumbs-current">Перфораторы</a>
+        <a class="breadcrumbs-link">Перфораторы</a>
       </li>
     </ul>
     <section class="filters">
-      <h2 class="filters-title">Фильтр</h2>
+      <h2 class="filters-title">Фильтр:</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-price">
           <legend class="filter-title">Цена:</legend>
           <p class="filter-price-inner">
             <label class="visually-hidden" for="min-price">От</label>
-            <input class="filte-min-price" type="text" id="min-price" name="min-price" value="0">
+            <input class="filter-min-price" type="text" id="min-price" name="min-price" value="0">
             <label class="visually-hidden" for="max-price">До</label>
-            <input class="filte-max-price" type="text" id="max-price" name="max-price" value="30000">
+            <input class="filter-max-price" type="text" id="max-price" name="max-price" value="30000">
           </p>
         </fieldset>
         <fieldset class="filter-manufacturers">
@@ -153,7 +153,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button filter-button" type="submit">Показать</button>
+        <button class="button catalog-button" type="submit">Показать</button>
       </form>
     </section>
     <section class="sort">
@@ -161,7 +161,7 @@
       <div class="sort-type-inner">
         <ul class="sort-type-list">
           <li class="sort-type-item">
-            <a class="sort-type-link" href="#">По цене</a>
+            <a class="sort-type-link sort-type-current" href="#">По цене</a>
           </li>
           <li class="sort-type-item">
             <a class="sort-type-link" href="#">По типу</a>
@@ -174,10 +174,10 @@
       <div class="sort-order-inner">
         <ul class="sort-order-list">
           <li class="sort-order-item">
-            <a class="sort-order-link" href="#">Сортировка от большего к меньшему</a>
+            <a class="visually-hidden" href="#">Сортировка от большего к меньшему</a>
           </li>
           <li class="sort-order-item">
-            <a class="sort-order-link" href="#">Сортировка от меньшего к большему</a>
+            <a class="visually-hidden" href="#">Сортировка от меньшего к большему</a>
           </li>
         </ul>
       </div>
@@ -293,17 +293,17 @@
         </li>
       </ul>
       <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a class="pagination-link">1</a>
+        <li class="pagination-item ">
+          <a class="catalog-button pagination-button-current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="catalog-button pagination-button" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="catalog-button pagination-button" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Следующая</a>
+          <a class="catalog-button pagination-button" href="#">Следующая</a>
         </li>
       </ul>
     </section>
@@ -393,8 +393,10 @@
       Окно успешного добавления товара в корзину
     </h2>
     <p class="modal-add-cart-text"><b>Товар добавлен в корзину!</b></p>
-    <a class="button button-checkout" href="#">Оформить заказ</a>
-    <a class="button button-continue" href="#">Продолжить покупки</a>
+    <div class="modal-add-cart-inner">
+      <a class="button button-checkout" href="#">Оформить заказ</a>
+      <a class="button button-continue" href="#">Продолжить покупки</a>
+    </div>
     <button class="modal-close" type="button">Закрыть окно</button>
   </section>
 </body>
