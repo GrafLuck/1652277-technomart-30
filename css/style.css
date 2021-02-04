@@ -158,6 +158,10 @@
     background-color: var(--mirage);
 }
 
+.header-cart-nonempty {
+  background-color: var(--basic-red);
+}
+
 .header-booking {
     background-color: var(--basic-green);
 }
@@ -243,6 +247,21 @@
 .site-navigation-link:active {
     background-color: var(--dark-mirage);
     color:rgba(var(--white), 0.5);
+}
+
+/* Header (Catalog-page)*/
+
+.user-catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.user-link {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
 }
 
 /* Main - Promo*/
