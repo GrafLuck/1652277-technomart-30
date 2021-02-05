@@ -792,7 +792,7 @@
 }
 
 .catalog-button {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -802,6 +802,18 @@
     border: 1px solid var(--mercury);
     text-decoration: none;
     text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+    border: 1px solid var(--basic-greylight);
+    outline: none;
+}
+
+.catalog-button:active {
+    border: 1px solid var(--basic-red);
 }
 
 .sort-type-link {
@@ -841,20 +853,16 @@
     border-radius: 2px;
 }
 
-.pagination-button:hover,
-.pagination-button:focus {
-    border: 1px solid var(--basic-greylight);
-}
-
-.pagination-button:active {
-    border: 1px solid var(--basic-red);
-}
-
 .pagination-button-current {
     border-radius: 2px;
     background-color: var(--basic-red);
     color: rgb(var(--white));
     border: 1px solid var(--basic-red);
+}
+
+.pagination-button-current:hover,
+.pagination-button-current:focus {
+  border: 1px solid var(--basic-red);
 }
 
 /* About good */
