@@ -269,6 +269,10 @@
   color: var(--basic-black);
 }
 
+.user-link:active {
+  color: var(--basic-greylight);
+}
+
 .order-link,
 .personal-page-link {
     font-size: 16px;
@@ -277,7 +281,17 @@
     text-decoration: none;
 }
 
-/* Main - Promo*/
+.order-link:hover,
+.personal-page-link:hover,
+.order-link:focus,
+.personal-page-link:focus {
+  color: var(--basic-red);
+}
+
+.order-link:active,
+.personal-page-link:active {
+  color: var(--basic-greylight);
+}
 
 .promo-goods-list,
 .promo-services-list {
@@ -685,8 +699,8 @@
 
 /****************************** CATALOG.HTML ***********************************/
 
-.catalog-title { 
-    color: var(--pickled-bluewood); 
+.catalog-title {
+    color: var(--pickled-bluewood);
     background: var(--aqua);
 }
 
@@ -773,6 +787,10 @@
     color: var(--basic-black);
 }
 
+.filter-input:disabled + .filter-label {
+  opacity: 0.4;
+}
+
 .catalog-button {
     font-family: PT Sans;
     font-style: normal;
@@ -794,15 +812,22 @@
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(var(--basic-black-rgb), 0.3);  
+    color: rgba(var(--basic-black-rgb), 0.3);
 
     display: inline-block;
     border-bottom: 1px dotted var(--basic-red);
 }
 
-.sort-type-current {
+.sort-type-link:hover,
+.sort-type-link:focus {
+    color: var(--basic-black);
+    border-bottom-style: solid;
+}
+
+.sort-type-current,
+.sort-type-current:hover,
+.sort-type-current:focus {
     color: var(--basic-red);
-    opacity: 1;
     border-bottom: none;
 }
 
@@ -816,11 +841,20 @@
     border-radius: 2px;
 }
 
+.pagination-button:hover,
+.pagination-button:focus {
+    border: 1px solid var(--basic-greylight);
+}
+
+.pagination-button:active {
+    border: 1px solid var(--basic-red);
+}
+
 .pagination-button-current {
     border-radius: 2px;
     background-color: var(--basic-red);
     color: rgb(var(--white));
-    border-color: var(--basic-red);
+    border: 1px solid var(--basic-red);
 }
 
 /* About good */
@@ -834,7 +868,7 @@
 }
 
 .about-good-text {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
