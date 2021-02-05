@@ -862,7 +862,7 @@
 
 .pagination-button-current:hover,
 .pagination-button-current:focus {
-  border: 1px solid var(--basic-red);
+    border: 1px solid var(--basic-red);
 }
 
 /* About good */
@@ -895,6 +895,19 @@
 .button-continue {
     color: var(--basic-black);
     background-color: rgb(var(--white));
+    border: 1px solid rgb(var(--white));
+}
+
+.button-continue:hover,
+.button-continue:focus {
+    color: var(--basic-black);
+    background-color: rgb(var(--white));
+    border: 1px solid var(--basic-greylight);
+    outline: none;
+}
+
+.button-continue:active {
+    border: 1px solid var(--basic-red);
 }
 
 .modal-add-cart-inner {
