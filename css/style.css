@@ -122,6 +122,22 @@
   text-transform: uppercase;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Header */
 
 .header-top-wrapper {
@@ -187,6 +203,7 @@
 
 .header-title {
     font-style: italic;
+    font-weight: normal;
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
@@ -273,6 +290,15 @@
   color: var(--basic-greylight);
 }
 
+.logout-link:hover path,
+.logout-link:focus path {
+    fill: var(--basic-grey);
+}
+
+.logout-link:active path {
+    fill: var(--basic-greylight);
+}
+
 .order-link,
 .personal-page-link {
     font-size: 16px;
@@ -292,6 +318,8 @@
 .personal-page-link:active {
   color: var(--basic-greylight);
 }
+
+/* Main Promo */
 
 .promo-goods-list,
 .promo-services-list {
@@ -719,6 +747,30 @@
     text-transform: uppercase;
     color: var(--basic-black);
     text-decoration: none;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+    color: var(--basic-red);
+}
+
+.breadcrumbs-link:active {
+    color: var(--basic-greylight);
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link:hover,
+.breadcrumbs-item:last-child .breadcrumbs-link:focus,
+.breadcrumbs-item:last-child .breadcrumbs-link:active {
+    color: var(--basic-black);
+}
+
+.breadcrumbs-link:hover path,
+.breadcrumbs-link:focus path {
+    fill: var(--basic-grey);
+}
+
+.breadcrumbs-link:active path {
+    fill: var(--basic-greylight);
 }
 
 /* Filters and Sorting */
