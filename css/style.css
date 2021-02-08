@@ -276,7 +276,7 @@
 .user-catalog-list {
   list-style: none;
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 .user-link {
@@ -511,7 +511,7 @@
     color: rgb(var(--white));
     background-color: var(--basic-blue);
     border: none;
-    box-shadow: 0px 1px 0px var(--bluewood), inset 0px 1px 0px var(--fiord);
+    box-shadow: 0 1px 0 var(--bluewood), inset 0 1px 0 var(--fiord);
 
     text-align: left;
     box-sizing: border-box;
@@ -534,7 +534,7 @@
     color: var(--basic-blue);
     background-color: rgb(var(--white));
     box-shadow: none;
-    box-shadow: 0px 1px 0px rgb(var(--white));
+    box-shadow: 0 1px 0 rgb(var(--white));
 }
 
 .active-control-button:hover,
@@ -825,8 +825,8 @@
 .sort-type-list,
 .sort-order-list {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-label {
