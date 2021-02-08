@@ -13,121 +13,131 @@
 
 <body class="page-body">
   <header class="header">
-    <div class="header-top-wrapper">
-      <a class="logo header-logo">
-        <img class="logo-image" src="img/logo-technomart.svg" width="108" height="18"
-          alt="Логотип интернет-магазина Техномарт">
-      </a>
-      <div class="header-inner">
-        <form class="form-search" action="#" method="POST">
-          <input class="search-input" type="search" placeholder="Поиск:" id="id-search" name="search-field">
-          <label class="visually-hidden" for="id-search">Поиск</label>
-        </form>
-        <div class="header-inner-right">
-          <a class="header-bookmark" href="#">Закладки: 0</a>
-          <a class="header-cart" href="#">Корзина: 0</a>
-          <a class="header-booking" href="#">Оформить заказ</a>
+    <div class="header-bar-top">
+      <div class="header-top-wrapper">
+        <a class="logo header-logo">
+          <img class="logo-image" src="img/logo-technomart.svg" width="108" height="18"
+            alt="Логотип интернет-магазина Техномарт">
+        </a>
+        <div class="header-inner">
+          <form class="form-search" action="#" method="POST">
+            <input class="search-input" type="search" placeholder="Поиск:" id="id-search" name="search-field">
+            <label class="visually-hidden" for="id-search">Поиск</label>
+          </form>
+          <div class="header-inner-right">
+            <a class="header-bookmark" href="#">Закладки: 0</a>
+            <a class="header-cart" href="#">Корзина: 0</a>
+            <a class="header-booking" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header-middle-wrapper">
-      <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="header-contact">
-        <a class="header-contact-phone" href="tel:+78125550555">+7 (812) 555-05-05</a>
-        <address class="header-contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
+    </div> 
+    <div class="header-bar-bottom">
+      <div class="header-middle-wrapper">
+        <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="header-contact">
+          <a class="header-contact-phone" href="tel:+78125550555">+7 (812) 555-05-05</a>
+          <address class="header-contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
+        </div>
+        <div class="user-navigation">
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">Войти</a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="user-navigation">
-        <ul class="user-navigation-list">
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Войти</a>
+      <nav class="site-navigation">
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Главная</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Регистрация</a>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Компания</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Новости</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Спецпредложения</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <nav class="site-navigation">
-      <ul class="site-navigation-list">
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Главная</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Компания</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Новости</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Спецпредложения</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </header>
+
   <main class="main">
-    <section class="promo">
-      <h2 class="visually-hidden">Промо-раздел</h2>
-      <ul class="promo-goods-list">
-        <li class="promo-goods-item promo-materials">
-          <p class="promo-goods-text">Материалы</p>
-          <a class="promo-goods-link" href="#">На любой вкус</a>
-        </li>
-        <li class="promo-goods-item promo-instrument">
-          <p class="promo-goods-text">Инструмент</p>
-          <a class="promo-goods-link" href="#">На все случаи</a>
-        </li>
-        <li class="promo-goods-item promo-technics">
-          <p class="promo-goods-text">Техника</p>
-          <a class="promo-goods-link" href="#">Для стройки</a>
-        </li>
-      </ul>
-      <ul class="promo-services-list">
-        <li class="promo-services-item promo-sales">
-          <p class="promo-services-text">Скидки 50%</p>
-          <a class="promo-services-link" href="#">На 350 товаров</a>
-        </li>
-        <li class="promo-services-item promo-delivery">
-          <p class="promo-services-text">Доставка</p>
-          <a class="promo-services-link" href="#">Бесплатно</a>
-        </li>
-      </ul>
-      <div class="promo-slider">
-        <div class="promo-slides-list">
-          <div class="promo-slides-item">
-            <p class="promo-slides-title">Дрели</p>
-            <p class="promo-slides-slogan">Соседям на радость!</p>
-            <img class="promo-slides-image" src="img/slider-drill.jpg" width="620" height="266"
-              alt="Строитель, работающий дрелью">
-            <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
+    <div class="container">
+      <section class="promo">
+        <h2 class="visually-hidden">Промо-раздел</h2>
+        <div class="promo-wrapper">
+          <ul class="promo-goods-list">
+            <li class="promo-goods-item promo-materials">
+              <p class="promo-goods-text">Материалы</p>
+              <a class="promo-goods-link" href="#">На любой вкус</a>
+            </li>
+            <li class="promo-goods-item promo-instrument">
+              <p class="promo-goods-text">Инструмент</p>
+              <a class="promo-goods-link" href="#">На все случаи</a>
+            </li>
+            <li class="promo-goods-item promo-technics">
+              <p class="promo-goods-text">Техника</p>
+              <a class="promo-goods-link" href="#">Для стройки</a>
+            </li>
+          </ul>
+          <ul class="promo-services-list">
+            <li class="promo-services-item promo-sales">
+              <p class="promo-services-text">Скидки 50%</p>
+              <a class="promo-services-link" href="#">На 350 товаров</a>
+            </li>
+            <li class="promo-services-item promo-delivery">
+              <p class="promo-services-text">Доставка</p>
+              <a class="promo-services-link" href="#">Бесплатно</a>
+            </li>
+          </ul>
+          <div class="promo-slider">
+            <div class="promo-slides-list">
+              <div class="promo-slides-item">
+                <p class="promo-slides-title">Дрели</p>
+                <p class="promo-slides-slogan">Соседям на радость!</p>
+                <img class="promo-slides-image" src="img/slider-drill.jpg" width="620" height="266"
+                  alt="Строитель, работающий дрелью">
+                <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="promo-slides-item">
+                <p class="promo-slides-title">Перфораторы</p>
+                <p class="promo-slides-slogan">Настоящие мужские игрушки</p>
+                <img class="promo-slides-image" src="img/slider-perforator.jpg" width="620" height="266"
+                  alt="Строитель, работающий перфоратором">
+                <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
+              </div>
+            </div>
+            <div class="promo-direction-control">
+              <button class="direction-control-previous" type="button">Предыдущий слайд</button>
+              <button class="direction-control-next" type="button">Следующий слайд</button>
+            </div>
+            <div class="promo-position-control">
+              <button class="position-control-first" type="button">Перейти на первый слайд</button>
+              <button class="position-control-second" type="button">Перейти на второй слайд</button>
+            </div>
           </div>
-          <div class="promo-slides-item">
-            <p class="promo-slides-title">Перфораторы</p>
-            <p class="promo-slides-slogan">Настоящие мужские игрушки</p>
-            <img class="promo-slides-image" src="img/slider-perforator.jpg" width="620" height="266"
-              alt="Строитель, работающий перфоратором">
-            <a class="button promo-slides-button" href="catalog.html">Открыть каталог</a>
-          </div>
         </div>
-        <div class="promo-direction-control">
-          <button class="direction-control-previous" type="button">Предыдущий слайд</button>
-          <button class="direction-control-next" type="button">Следующий слайд</button>
-        </div>
-        <div class="promo-position-control">
-          <button class="position-control-first" type="button">Перейти на первый слайд</button>
-          <button class="position-control-second" type="button">Перейти на второй слайд</button>
-        </div>
-      </div>
-    </section>
-    <section class="goods">
+      </section>
+    </div>
+    
+    <!-- <section class="goods">
       <div class="goods-wrapper">
         <h2 class="title goods-title">Популярные товары:</h2>
         <a class="button goods-link" href="#">Все популярные товары</a>
@@ -310,9 +320,9 @@
       <a class="button contacts-link" href="#">
         Заблудились? Напишите нам
       </a>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer-top-wrapper">
       <a class="logo footer-logo">
         <img class="logo-image" src="img/logo-technomart.svg" width="108" height="18"
@@ -403,7 +413,8 @@
       </div>
     </form>
     <button class="modal-close" type="button">Закрыть окно</button>
-  </section>
+  </section> -->
+
 </body>
 
 </html>

@@ -91,6 +91,7 @@
   font-size: 18px;
   line-height: 24px;
   color: rgb(var(--white));
+  min-width: 960px;
 }
 
 /* Common */
@@ -138,10 +139,31 @@
   overflow: hidden;
 }
 
-/* Header */
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
-.header-top-wrapper {
+/* Header */
+.header {
+  margin-bottom: 60px;
+}
+
+.header-bar-top {
   background-color: var(--bluewood);
+}
+
+.header-bar-bottom {
+  background-color: var(--basic-background);
+}
+
+.header-top-wrapper,
+.header-middle-wrapper,
+.site-navigation {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .logo {
@@ -195,10 +217,6 @@ background-color: var(--basic-red);
 .header-booking:active {
   color: rgba(var(--white), 0.5);
   background-color: var(--basic-green);
-}
-
-.header-middle-wrapper {
-  background-color: var(--basic-background);
 }
 
 .header-title {
@@ -321,11 +339,46 @@ background-color: var(--basic-red);
 
 /* Main Promo */
 
+.promo-wrapper {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "goods goods goods"
+    "slider slider services"
+    "slider slider services";
+  gap: 20px;
+}
+
 .promo-goods-list,
 .promo-services-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.promo-goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: goods;
+  gap: 20px;
+}
+
+.promo-services-list {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-area: services;
+  gap: 20px;
+}
+
+.promo-slider {
+  grid-area: slider;
+}
+
+.promo-goods-item,
+.promo-services-item {
+  width: 300px;
+  min-height: 123px;
 }
 
 .promo-materials {
@@ -377,8 +430,30 @@ background-color: var(--basic-red);
   background-color: rgba(var(--silver-rgb), 0.3);
 }
 
+.promo-slider {
+  position: relative;
+}
+
+.promo-direction-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.promo-position-control {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.promo-slides-item:not(:last-child) {
+  display: none;
+}
+
 .promo-slides-item {
   background-color: var(--basic-black);
+  position: relative;
 }
 
 .promo-slides-title {
@@ -386,6 +461,21 @@ background-color: var(--basic-red);
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+
+  position: absolute;
+  left: 24px;
+  top: 23px;
+
+  margin: 0;
+}
+
+.promo-slides-slogan {
+  position: absolute;
+
+  left: 24px;
+  top: 64px;
+
+  margin: 0;
 }
 
 /* Main - Goods*/
