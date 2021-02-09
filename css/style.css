@@ -829,13 +829,20 @@ background-color: var(--basic-red);
 
 /* Footer */
 
-.footer-top-wrapper,
-.footer-middle-wrapper {
+.footer-bar-top {
   background-color: var(--basic-blue);
 }
 
-.footer-bottom-wrapper {
+.footer-bar-bottom {
   background-color: var(--bluewood);
+}
+
+.footer-top-wrapper,
+.footer-middle-wrapper,
+.footer-bottom-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .footer-navigation-list,
