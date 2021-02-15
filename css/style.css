@@ -215,6 +215,7 @@
   width: 108px;
   padding: 12px 56px 17px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 }
 
 .logo:active {
@@ -1372,18 +1373,42 @@
   grid-template-areas:
     "logo nav-list"
     "contact offers-list";
-  gap: 20px;
+  gap: 27px;
   justify-content: space-between;
+  min-height: 193px;
 }
-
 
 .logo-footer-wrapper {
   grid-area: logo;
+  height: 63px;
+  align-self: start;
+  position: relative;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 23px;
+  width: 138px;
+  padding: 21px 41px 24px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-navigation-list,
+.footer-offers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   grid-area: nav-list;
+  justify-self: end;
+  align-self: end;
+  margin-top: 37px;
 }
 
 .footer-navigation-item,
@@ -1394,13 +1419,6 @@
 .footer-navigation-item:last-child,
 .footer-offers-item:last-child {
   margin-right: 0;
-}
-
-.footer-navigation-list,
-.footer-offers-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer-navigation-link {
@@ -1419,6 +1437,8 @@
 .footer-offers-list {
   display: flex;
   grid-area: offers-list;
+  justify-self: end;
+  padding-top: 6px;
 }
 
 .footer-offers-link {
@@ -1455,7 +1475,7 @@
 
 .footer-bottom-wrapper {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
+  grid-template-columns: 1fr 134px auto auto;
   min-height: 107px;
   align-items: center;
 }
@@ -1472,18 +1492,25 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-social-button {
-  display: block;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  width: 41px;
+  height: 41px;
   border-radius: 50%;
   background-color:var(--ebony-clay);
 }
 
 .footer-social-button svg {
   margin: auto;
+}
+
+.footer-social-button:hover,
+.footer-social-button:focus,
+.footer-social-button:active {
+  background-color: var(--basic-red);
 }
 
 .footer-email,
