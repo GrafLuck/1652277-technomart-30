@@ -931,6 +931,7 @@
 }
 
 .goods-item {
+  box-sizing: border-box;
   width: 220px;
   border: 1px solid var(--mercury);
   position: relative;
@@ -954,6 +955,11 @@
   line-height: 20px;
 
   color: var(--basic-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 316px;
 }
 
 .goods-info-title {
@@ -978,7 +984,6 @@
   line-height: 38px;
   text-transform: uppercase;
   color: rgb(var(--white));
-  text-transform: uppercase;
   background-color: var(--basic-red);
   position: relative;
   height: 38px;
@@ -1714,6 +1719,7 @@
   display: grid;
   grid-template-columns: 220px 380px 60px;
   gap: 20px;
+  align-items: center;
 }
 
 .filters-title,
@@ -1731,6 +1737,11 @@
 .filters-title,
 .sort {
   background-color: var(--ecru-white);
+  border-radius: 2px;
+}
+
+.filters-title {
+  margin-bottom: 15px;
 }
 
 .filter-title {
@@ -1880,7 +1891,7 @@
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -35px;
   top: 0;
   width: 23px;
   height: 23px;
@@ -1902,7 +1913,7 @@
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -35px;
   top: 0;
   width: 27px;
   height: 23px;
@@ -1924,7 +1935,7 @@
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -35px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -1990,10 +2001,18 @@
 
 .sort-type-list {
   padding: 10px 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 .sort-type-item {
-  display: inline-block;
+  margin-right: 68px;
+  line-height: 18px;
+}
+
+.sort-type-item:last-child {
+  margin-right: 0;
 }
 
 .sort-type-link {
@@ -2021,6 +2040,28 @@
 .sort-type-current:focus {
   color: var(--basic-red);
   border-bottom: none;
+}
+
+.sort-order-list {
+  display: flex;
+  justify-content: space-between;
+  width: 42px;
+  flex-wrap: wrap;
+}
+
+.sort-order-link-up svg {
+  transform: rotate(180deg);
+}
+
+.sort-order-current svg path {
+  fill: var(--basic-red);
+}
+
+.sort-order-link-up:not(.sort-order-current):hover svg path,
+.sort-order-link-down:not(.sort-order-current):hover svg path,
+.sort-order-link-up:not(.sort-order-current):focus svg path,
+.sort-order-link-down:not(.sort-order-current):focus svg path {
+  fill: var(--basic-black);
 }
 
 /* Goods Catalog*/
