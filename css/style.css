@@ -190,15 +190,7 @@
   padding-bottom: 60px;
 }
 
-.header-top-wrapper,
-.header-middle-wrapper,
-.site-navigation {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.header-top-wrapper {
+.header-top-grid {
   display: grid;
   grid-template-columns: 220px 1fr 1fr;
   min-height: 42px;
@@ -399,7 +391,7 @@
 }
 
 
-.header-middle-wrapper {
+.header-middle-grid {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   gap: 20px;
@@ -1222,6 +1214,7 @@
   min-height: 61px;
   padding: 0;
   padding-left: 22px;
+  padding-right: 22px;
 }
 
 .services-control-button:hover,
@@ -1310,7 +1303,7 @@
 
 /* Main - About and Contacts*/
 
-.about-and-contacts {
+.about-and-contacts-grid {
   display: grid;
   grid-template-columns: 620px 300px;
   gap: 20px;
@@ -1427,7 +1420,7 @@
   display: grid;
 }
 
-.footer-top-wrapper {
+.footer-top-grid {
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: auto 1fr;
@@ -1534,7 +1527,7 @@
   text-decoration: none;
 }
 
-.footer-bottom-wrapper {
+.footer-bottom-grid {
   display: grid;
   grid-template-columns: 1fr 134px auto auto;
   min-height: 107px;
@@ -2285,6 +2278,8 @@
 /* Modal Add to the Cart */
 
 .modal-add-cart {
+  display: none; /*grid*/
+  grid-template-rows: 170px 112px;
   box-sizing: border-box;
   position: fixed;
   right: 0;
@@ -2297,8 +2292,6 @@
   box-shadow: 0px 20px 40px rgba(var(--basic-black-rgb), 0.75);
   background-image: linear-gradient(to bottom, var(--basic-red) 0% 7px, rgb(var(--white)) 7px 100%);
   z-index: 100;
-  display: grid;
-  grid-template-rows: 170px 112px;
 }
 
 .modal-add-cart::before {
