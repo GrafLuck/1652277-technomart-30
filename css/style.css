@@ -1718,6 +1718,30 @@
   background-position: 0 0;
 }
 
+/* Modal Map*/
+
+.modal-map {
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 120px;
+  bottom: auto;
+  width: 943px;
+  height: 449px;
+  box-shadow: 0px 20px 40px rgba(var(--basic-black-rgb), 0.75);
+  background-image: linear-gradient(to bottom, var(--basic-red) 0% 7px, rgb(var(--white)) 7px 100%);
+  z-index: 100;
+}
+
+.modal-map-img {
+  display: block;
+  margin-top: 7px;
+  border: none;
+}
+
 /****************************** CATALOG.HTML ***********************************/
 
 .page-catalog {
@@ -2260,16 +2284,68 @@
 
 /* Modal Add to the Cart */
 
+.modal-add-cart {
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px rgba(var(--basic-black-rgb), 0.75);
+  background-image: linear-gradient(to bottom, var(--basic-red) 0% 7px, rgb(var(--white)) 7px 100%);
+  z-index: 100;
+  display: grid;
+  grid-template-rows: 170px 112px;
+}
+
+.modal-add-cart::before {
+  content: "";
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 55px;
+  left: 81px;
+}
+
+.modal-add-cart-inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  background-color: var(--basic-background);
+}
+
 .modal-add-cart-text {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-black);
+  margin-top: 73px;
+  text-align: center;
+  padding-left: 155px;
+  padding-right: 155px;
+}
+
+.button-checkout {
+  display: block;
+  width: 192px;
+  line-height: 38px;
+  margin-right: 10px;
 }
 
 .button-continue {
   color: var(--basic-black);
   background-color: rgb(var(--white));
   border: 1px solid rgb(var(--white));
+  display: block;
+  width: 192px;
+  line-height: 38px;
 }
 
 .button-continue:hover,
@@ -2282,8 +2358,4 @@
 
 .button-continue:active {
   border: 1px solid var(--basic-red);
-}
-
-.modal-add-cart-inner {
-  background-color: var(--basic-background);
 }
