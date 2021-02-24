@@ -2087,7 +2087,7 @@
   bottom: auto;
   left: 0;
 
-  display: none;
+  display: block;
 
   box-sizing: border-box;
   width: 943px;
@@ -2102,8 +2102,15 @@
   display: block;
 
   margin-top: 7px;
+  width: 943px; 
+  height: 442px;
 
   border: none;
+
+  background-image: url("../img/map-popup.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  object-fit: cover;
 }
 
 /****************************** CATALOG.HTML ***********************************/
