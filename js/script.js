@@ -15,6 +15,8 @@ const contactsMap = document.querySelector(".contacts-map");
 const modalMap = document.querySelector(".modal-map");
 const modalMapClose = modalMap.querySelector(".modal-close");
 
+
+
 let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
@@ -173,4 +175,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-

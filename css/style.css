@@ -2870,7 +2870,7 @@
 
 /* Common Modal*/
 .modal-show {
-  display: block;
+  display: grid;
   animation: bounce 0.6s;
 }
 
