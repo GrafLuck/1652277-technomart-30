@@ -11,6 +11,9 @@ const promoSlides = document.querySelectorAll(".promo-slides-item");
 const positionControlButton = document.querySelectorAll(".position-control-button");
 const servicesControlButton = document.querySelectorAll(".services-control-button");
 const servicesSlides = document.querySelectorAll(".services-slides-item");
+const contactsMap = document.querySelector(".contacts-map");
+const modalMap = document.querySelector(".modal-map");
+const modalMapClose = modalMap.querySelector(".modal-close");
 
 let isStorageSupport = true;
 let storageName = "";
@@ -148,4 +151,26 @@ for (let i = 0; i < servicesControlButton.length; ++i) {
   });
 }
 
+// Скрипты для открытия и закрытия модального окна с картой
+
+contactsMap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalMap.classList.add("modal-show");
+});
+
+modalMapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalMap.classList.remove("modal-show");
+});
+
+// Скрипт для закрытия модального окна с карты с клавиатуры по ESC
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalMap.classList.contains("modal-show")) {
+      evt.preventDefault();
+      modalMap.classList.remove("modal-show");
+    }
+  }
+});
 
