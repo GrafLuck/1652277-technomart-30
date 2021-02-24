@@ -923,8 +923,8 @@
 
   width: 30px;
 
-  -webkit-transform: translate(-15px);
-          transform: translate(-15px);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .position-control-button {
@@ -1082,6 +1082,7 @@
   width: 220px;
 
   border: 1px solid var(--mercury);
+  outline: none;
 }
 
 .goods-item:hover,
@@ -1090,7 +1091,7 @@
 }
 
 .goods-item:hover .goods-interaction,
-.goods-item:focus .goods-interaction {
+.goods-item:focus-within .goods-interaction {
   z-index: 1;
 }
 
@@ -1109,6 +1110,12 @@
   min-height: 316px;
 
   color: var(--basic-black);
+}
+
+.goods-info-image {
+  width: 218px;
+  height: 170px;
+  object-fit: cover;
 }
 
 .goods-info-title {
@@ -1190,7 +1197,7 @@
   top: 0;
   left: 0;
 
-  width: 220px;
+  width: 218px;
   height: 170px;
 
   background-color: rgb(var(--white));
@@ -1222,6 +1229,10 @@
 
 .goods-btn-buy:active {
   background-color: var(--apple);
+}
+
+.goods-btn-buy:focus .goods-interaction {
+  z-index: 1;
 }
 
 .goods-btn-buy::before {
@@ -1265,6 +1276,10 @@
 
 .goods-btn-bookmark:active {
   opacity: .5;
+}
+
+.goods-btn-bookmark:focus .goods-interaction {
+  z-index: 1;
 }
 
 /* Main - Brands*/
@@ -1340,24 +1355,17 @@
 .brands-item-link:hover,
 .brands-item-link:focus {
   box-shadow: 0 4px 20px rgba(var(--basic-black-rgb), .15);
+  outline: none;
 }
 
-.brands-item::before {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
+.brands-item-link:active img {
+  opacity: 0.5;
+}
 
+.brand-item-image {
   width: 218px;
-  height: 145px;
-
-  content: "";
-
-  background-color: rgba(var(--white), .5);
-}
-
-.brands-item:active:before {
-  z-index: 1;
+  height: 143px;
+  object-fit: cover;
 }
 
 /* Main - Services*/
@@ -1661,6 +1669,12 @@
   margin-bottom: 33px;
 
   color: var(--basic-black);
+}
+
+.contacts-map img {
+  width: 300px;
+  height: 158px;
+  object-fit: cover;
 }
 
 .contacts-link {
