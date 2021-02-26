@@ -2087,7 +2087,7 @@
   bottom: auto;
   left: 0;
 
-  display: block;
+  display: none;
 
   box-sizing: border-box;
   width: 943px;
