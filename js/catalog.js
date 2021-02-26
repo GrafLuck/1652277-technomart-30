@@ -1,6 +1,8 @@
 const modalAddCart = document.querySelector(".modal-add-cart");
 const goodsBtnBuy = document.querySelectorAll(".goods-btn-buy");
 const modalAddCartClose = modalAddCart.querySelector(".modal-close");
+const buttonCheckout = modalAddCart.querySelector(".button-checkout");
+const buttonContinue = modalAddCart.querySelector(".button-continue");
 
 // Скрипты для открытия и закрытия модального окна Добавления товара на странице каталога
 
@@ -26,4 +28,14 @@ if (evt.keyCode === 27) {
     modalAddCart.classList.remove("modal-show");
   }
 }
+});
+
+buttonCheckout.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalAddCart.classList.remove("modal-show");
+});
+
+buttonContinue.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalAddCart.classList.remove("modal-show");
 });

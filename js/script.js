@@ -14,8 +14,11 @@ const servicesSlides = document.querySelectorAll(".services-slides-item");
 const contactsMap = document.querySelector(".contacts-map");
 const modalMap = document.querySelector(".modal-map");
 const modalMapClose = modalMap.querySelector(".modal-close");
-
-
+const modalAddCart = document.querySelector(".modal-add-cart");
+const goodsBtnBuy = document.querySelectorAll(".goods-btn-buy");
+const modalAddCartClose = modalAddCart.querySelector(".modal-close");
+const buttonCheckout = modalAddCart.querySelector(".button-checkout");
+const buttonContinue = modalAddCart.querySelector(".button-continue");
 
 let isStorageSupport = true;
 let storageName = "";
@@ -174,4 +177,40 @@ window.addEventListener("keydown", function (evt) {
       modalMap.classList.remove("modal-show");
     }
   }
+});
+
+// Скрипты для открытия и закрытия модального окна Добавления товара на странице каталога
+
+for (let i=0; i < goodsBtnBuy.length; ++i) {
+  goodsBtnBuy[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalAddCart.classList.add("modal-show");
+  });
+}
+
+modalAddCartClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalAddCart.classList.remove("modal-show");
+});
+
+
+// Скрипт для закрытия модального окна Добавления товара на странице каталога с клавиатуры по ESC
+
+window.addEventListener("keydown", function (evt) {
+if (evt.keyCode === 27) {
+  if (modalAddCart.classList.contains("modal-show")) {
+    evt.preventDefault();
+    modalAddCart.classList.remove("modal-show");
+  }
+}
+});
+
+buttonCheckout.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalAddCart.classList.remove("modal-show");
+});
+
+buttonContinue.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalAddCart.classList.remove("modal-show");
 });

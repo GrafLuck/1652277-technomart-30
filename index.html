@@ -7,8 +7,8 @@
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/152.png"><!-- 152×152 -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -493,7 +493,17 @@
     <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи"></button>
   </section>
 
-  <script src="js/script.js"></script>
+  <section class="modal modal-add-cart">
+    <h2 class="visually-hidden">Окно успешного добавления товара в корзину</h2>
+    <p class="modal-add-cart-text"><b>Товар добавлен в корзину!</b></p>
+    <div class="modal-add-cart-inner">
+      <a class="button button-checkout" href="#">Оформить заказ</a>
+      <a class="button button-continue" href="#">Продолжить покупки</a>
+    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть окно успешного добавления товара в корзину"></button>
+  </section>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
