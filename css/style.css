@@ -762,9 +762,9 @@
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "goods goods goods"
-                       "slider slider services"
-                       "slider slider services";
+  grid-template-areas: "goods goods goods"
+                    "slider slider services"
+                    "slider slider services";
   gap: 20px;
 }
 
@@ -1115,7 +1115,6 @@
   position: relative;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
   width: 220px;
 
@@ -1307,7 +1306,6 @@
   line-height: 18px;
 
   display: -webkit-box;
-
   display: flex;
   -webkit-box-align: center;
       align-items: center;
@@ -1373,7 +1371,6 @@
   line-height: 18px;
 
   display: -webkit-box;
-
   display: flex;
   -webkit-box-align: center;
       align-items: center;
@@ -1757,7 +1754,6 @@
   line-height: 18px;
 
   display: -webkit-box;
-
   display: flex;
   -webkit-box-align: center;
       align-items: center;
@@ -1793,8 +1789,8 @@
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   grid-template-columns: 350px 1fr;
-      grid-template-areas: "logo nav-list"
-                       "contact offers-list";
+  grid-template-areas: "logo nav-list"
+                    "contact offers-list";
   gap: 27px;
 }
 
@@ -2059,8 +2055,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
-      grid-template-areas: "name email"
-                       "text text";
+  grid-template-areas: "name email"
+                      "text text";
   row-gap: 13px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
@@ -2267,10 +2263,10 @@
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content min-content;
   grid-template-columns: 220px 700px;
-      grid-template-areas: "breadcrumbs breadcrumbs"
-                       "title title"
-                       "filter sort"
-                       "filter goods";
+  grid-template-areas: "breadcrumbs breadcrumbs"
+                    "title title"
+                    "filter sort"
+                    "filter goods";
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
