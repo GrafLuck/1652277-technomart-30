@@ -1792,7 +1792,7 @@
 
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 350px 1fr;
       grid-template-areas: "logo nav-list"
                        "contact offers-list";
   gap: 27px;
@@ -1843,12 +1843,12 @@
 
 .footer-navigation-item,
 .footer-offers-item {
-  margin-right: 59px;
+  margin-left: 59px;
 }
 
-.footer-navigation-item:last-child,
-.footer-offers-item:last-child {
-  margin-right: 0;
+.footer-navigation-item:first-child,
+.footer-offers-item:first-child {
+  margin-left: 0;
 }
 
 .footer-navigation-link {
@@ -1880,7 +1880,8 @@
   padding-top: 5px;
 
   grid-area: offers-list;
-  justify-self: end;
+  -webkit-box-pack: end;
+      justify-content: flex-end;
 }
 
 .footer-offers-link {
@@ -1928,7 +1929,7 @@
 
   min-height: 107px;
 
-  grid-template-columns: 1fr 134px auto auto;
+  grid-template-columns: 322px 268px 207px 143px;
 }
 
 .footer-copyright {
@@ -1944,8 +1945,8 @@
 .footer-social-list {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-      justify-content: space-between;
+  -webkit-box-pack: center;
+      justify-content: center;
   flex-wrap: wrap;
 
   margin: 0;
@@ -1953,6 +1954,16 @@
   padding: 0;
 
   list-style: none;
+}
+
+.footer-social-item {
+  margin: 2px;
+}
+.footer-social-item:first-child {
+  margin-left: 0;
+}
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social-button {
@@ -1985,12 +1996,12 @@
 }
 
 .footer-email {
-  margin-left: 118px;
+  margin-left: 52px;
 }
 
 .footer-developer-copyright {
   min-width: 110px;
-  margin-left: 53px;
+  margin-left: 33px;
 }
 
 .footer-email-link,
